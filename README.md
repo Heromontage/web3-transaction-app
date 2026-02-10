@@ -1,187 +1,70 @@
-# 🚀 Web3 Ethereum Transaction Application
+# Getting Started with Create React App
 
-A React-based Web3 application for sending Ethereum transactions using MetaMask or Coinbase Wallet.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Prerequisites](#prerequisites)
-- [Getting Test ETH](#getting-test-eth)
-- [Security Notes](#security-notes)
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-✅ **Wallet Connection** - Connect MetaMask or Coinbase Wallet
-✅ **Check Balance** - View your ETH balance in real-time
-✅ **Send Transactions** - Send ETH to any Ethereum address
-✅ **Network Detection** - Automatically detect connected network
-✅ **Error Handling** - Comprehensive validation and error messages
-✅ **Transaction Tracking** - View transaction hash with Etherscan link
-✅ **Responsive Design** - Works on desktop and mobile devices
-✅ **Auto-connect** - Automatically reconnect to wallet on page reload
+### `npm start`
 
-## Installation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- MetaMask or Coinbase Wallet browser extension
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Steps
+### `npm test`
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Heromontage/web3-transaction-app.git
-   cd web3-transaction-app
-   ```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-2. **Install dependencies:**
-   ```bash
-   npm install ethers
-   ```
+### `npm run build`
 
-3. **Start the development server:**
-   ```bash
-   npm start
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-4. **Open in browser:**
-   ```
-   http://localhost:3000
-   ```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Usage
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Connect Your Wallet
-1. Click the "Connect Wallet" button
-2. Select your wallet (MetaMask or Coinbase Wallet)
-3. Approve the connection in your wallet extension
+### `npm run eject`
 
-### Send a Transaction
-1. Enter the recipient's Ethereum address
-2. Enter the amount of ETH to send
-3. Click "Send Transaction"
-4. Confirm the transaction in your wallet
-5. Wait for confirmation
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Disconnect Wallet
-Click the "Disconnect Wallet" button to disconnect your wallet.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Prerequisites
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- **Node.js**: Download from https://nodejs.org/
-- **Browser Extension**: 
-  - MetaMask: https://metamask.io
-  - Coinbase Wallet: https://www.coinbase.com/wallet
-- **Test ETH**: Required for testing on testnets (see below)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Getting Test ETH
+## Learn More
 
-To test this app without spending real money, use a testnet with test ETH:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Sepolia Testnet (Recommended)
-- **Faucet**: https://sepoliafaucet.com
-- **Explorer**: https://sepolia.etherscan.io
-- **Instructions**:
-  1. Switch to Sepolia in MetaMask
-  2. Copy your wallet address
-  3. Paste it on the faucet website
-  4. Claim test ETH
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Goerli Testnet
-- **Faucet**: https://goerlifaucet.com
-- **Explorer**: https://goerli.etherscan.io
+### Code Splitting
 
-## Supported Networks
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Ethereum Mainnet
-- Sepolia Testnet
-- Goerli Testnet
-- Polygon (Matic)
-- Arbitrum
-- Optimism
-- And any other EVM-compatible network
+### Analyzing the Bundle Size
 
-## Supported Wallets
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- MetaMask
-- Coinbase Wallet
-- Brave Wallet
-- Any EIP-1193 compatible wallet
+### Making a Progressive Web App
 
-## Project Structure
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```
-web3-transaction-app/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Web3Transaction.js
-│   │   └── Web3Transaction.css
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│   └── index.css
-├── package.json
-└── README.md
-```
+### Advanced Configuration
 
-## Technologies Used
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- **React 18** - UI framework
-- **ethers.js 6** - Ethereum library
-- **CSS3** - Styling
+### Deployment
 
-## Security Considerations
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-⚠️ **Important Security Notes:**
+### `npm run build` fails to minify
 
-1. **Never share your private keys** - This app only uses your wallet's signing capability
-2. **Always verify addresses** - Double-check recipient addresses before sending
-3. **Transactions are irreversible** - Once sent, transactions cannot be undone
-4. **Use testnet first** - Test with testnet ETH before using mainnet
-5. **Check gas prices** - Be aware of network conditions and gas prices
-6. **Only use official wallet extensions** - Install from official sources only
-
-## Troubleshooting
-
-### "Please install MetaMask or Coinbase Wallet"
-- Install MetaMask: https://metamask.io
-- Install Coinbase Wallet: https://www.coinbase.com/wallet
-
-### "Insufficient balance"
-- Get test ETH from a faucet (see "Getting Test ETH" section)
-- Make sure you're on the correct network
-
-### "Invalid Ethereum address"
-- Check that the address is a valid Ethereum address (starts with 0x)
-- Ensure it's 42 characters long (including 0x prefix)
-
-### Transaction fails
-- Check your gas price settings
-- Ensure the recipient address is valid
-- Make sure you have enough ETH for gas fees
-
-## API References
-
-- [ethers.js Documentation](https://docs.ethers.org/v6/)
-- [Ethereum JSON-RPC](https://ethereum.org/en/developers/docs/apis/json-rpc/)
-- [EIP-1193 MetaMask](https://docs.metamask.io/guide/rpc-api.html)
-
-## License
-
-MIT
-
-## Disclaimer
-
-This is a demonstration application. Use at your own risk. Always verify transactions before confirming.
-
-## Support
-
-For issues or questions, please open an issue in the repository.
-
----
-
-**Made with ❤️ for the Web3 community**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
